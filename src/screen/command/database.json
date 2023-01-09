@@ -1,0 +1,239 @@
+{
+    "logout_one": {
+        "data": [
+            {
+                "playerSSID": [
+                    "playerSSID"
+                ]
+            },
+            {
+                "owner": [
+                    "owner_name",
+                    "player_account"
+                ]
+            },
+            {
+                "parent": [
+                    "parent_name",
+                    "player_account"
+                ]
+            }
+        ],
+        "ex": [
+            "1. fn: logout_one, playerSSID: 5ea11e5bbe385e00013d5472",
+            "2. fn: logout_one, owner: gpk, account: xc35666159"
+        ]
+    },
+    "logout_all_by_game": {
+        "data": [
+            {
+                "gameCode": [
+                    "game_code"
+                ]
+            }
+        ],
+        "ex": [
+            "fn: logout_all_by_game, gameCode: 1"
+        ]
+    },
+    "frozen": {
+        "data": [
+            {
+                "playerSSID": [
+                    "playerSSID"
+                ]
+            },
+            {
+                "owner": [
+                    "owner_name",
+                    "player_account"
+                ]
+            },
+            {
+                "parent": [
+                    "parent_name",
+                    "player_account"
+                ]
+            }
+        ],
+        "ex": [
+            "1. fn: frozen, playerSSID: 5ea11e5bbe385e00013d5472",
+            "2. fn: frozen, owner: gpk, account: xc35666159"
+        ]
+    },
+    "defrozen": {
+        "data": [
+            {
+                "playerSSID": [
+                    "playerSSID"
+                ]
+            },
+            {
+                "owner": [
+                    "owner_name",
+                    "player_account"
+                ]
+            },
+            {
+                "parent": [
+                    "parent_name",
+                    "player_account"
+                ]
+            }
+        ],
+        "ex": [
+            "1. fn: defrozen, playerSSID: 5ea11e5bbe385e00013d5472",
+            "2. fn: defrozen, owner: gpk, account: xc35666159"
+        ]
+    },
+    "set_rtp": {
+        "data": [
+            {
+                "playerSSID": [
+                    "playerSSID",
+                    "rtp"
+                ]
+            },
+            {
+                "owner": [
+                    "owner_name",
+                    "player_account",
+                    "rtp"
+                ]
+            },
+            {
+                "parent": [
+                    "parent_name",
+                    "player_account",
+                    "rtp"
+                ]
+            }
+        ],
+        "ex": [
+            "1. fn: set_rtp, playerSSID: 5ea11e5bbe385e00013d5472, rtp: 80",
+            "2. fn: set_rtp, owner: gpk, account: xc35666159, rtp: 80",
+            "3. fn: set_rtp, parent: bbinCNY, account: 727251715, rtp: 84"
+        ]
+    },
+    "reset_parent_user_rtp": {
+        "data": [
+            {
+                "owner": [
+                    "owner_name"
+                ]
+            },
+            {
+                "parent": [
+                    "parent_name"
+                ]
+            }
+        ],
+        "ex": [
+            "1. fn: set_parent_rtp, owner: AUQI",
+            "2. fn: set_parent_rtp, parent: ope"
+        ]
+    },
+    "set_parent_blacks": {
+        "data": [
+            {
+                "owner": [
+                    "owner_name",
+                    "game_code"
+                ]
+            },
+            {
+                "parent": [
+                    "parent_name",
+                    "game_code"
+                ]
+            }
+        ],
+        "ex": [
+            "fn: set_parent_blacks, owner: Peter666, gameCode: 38"
+        ]
+    },
+    "rm_parent_blacks": {
+        "data": [
+            {
+                "owner": [
+                    "owner_name",
+                    "game_code"
+                ]
+            },
+            {
+                "parent": [
+                    "parent_name",
+                    "game_code"
+                ]
+            }
+        ],
+        "ex": [
+            "fn: rm_parent_blacks, owner: Peter666, gameCode: 38"
+        ]
+    },
+    "get_parent_blacks": {
+        "data": [
+            {
+                "owner": [
+                    "owner_name"
+                ]
+            },
+            {
+                "parent": [
+                    "parent_name"
+                ]
+            }
+        ],
+        "ex": [
+            "fn: get_parent_blacks, owner: Peter666"
+        ]
+    },
+    "user_info": {
+        "data": [
+            {
+                "playerSSID": [
+                    "playerSSID"
+                ]
+            }
+        ],
+        "ex": [
+            "1. fn: user_info, playerSSID: 5ea11e5bbe385e00013d5472"
+        ]
+    },
+    "user_ssid": {
+        "data": [
+            {
+                "owner": [
+                    "owner_name",
+                    "player_account"
+                ]
+            },
+            {
+                "parent": [
+                    "parent_name",
+                    "player_account"
+                ]
+            }
+        ],
+        "ex": [
+            "1. fn: user_ssid, owner: gpk, account: xc35666159",
+            "2. fn: user_ssid, parent: bbinCNY, account: 727251715"
+        ]
+    },
+    "get_hedge": {
+        "data": [
+            {
+                "parent": [
+                    "parent_name",
+                    "player_account",
+                    "date",
+                    "UTC"
+                ]
+            }
+        ],
+        "ex": [
+            "1-1. fn: get_hedge, parent: BBINLIVECNY, account: 101751200, date: _2021-11-01",
+            "1-2. fn: get_hedge, parent: BBINLIVECNY, account: 101751200, date: _2021-11-01, UTC: +00"
+        ]
+    }
+}

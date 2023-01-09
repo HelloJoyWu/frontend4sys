@@ -1,0 +1,5 @@
+rootProject.name = 'frontend4sys'
+include ':@react-native-clipboard_clipboard'
+project(':@react-native-clipboard_clipboard').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-clipboard/clipboard/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
